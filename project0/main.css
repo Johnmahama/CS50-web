@@ -1,0 +1,39 @@
+html {
+    background-color: #f7f7f7;
+}
+
+h1, h2 {
+    font-size: 80px;
+    
+    color: rebeccapurple;
+    
+    width: 20%;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+#pets-title {
+    color: mediumvioletred;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#protip {
+    font-size: 15px;
+    font-family: monospace;
+    color: dimgray;
+    font-variant-caps: all-small-caps;
+}
+
+img {
+    width: 20%;
+}
+
+img:hover {
+    width: 21%;
+}
