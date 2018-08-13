@@ -2,7 +2,7 @@
 
 The project is hosted on GitHub Pages: 
 
-https://komatar.github.io/CS50-web/project0/animals.html.
+https://komatar.github.io/CS50-web/project0/index.html.
 
 # Main page
 
