@@ -3,22 +3,23 @@
     <head>
         <meta charset="utf-8" />
         <title>Dog</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="main.css" />
         <link rel="stylesheet" href="dog.css" />
     </head>
     <body>
         <h1 class="title">Dog</h1>
         <p>A domesticated carnivorous mammal that typically has a long snout, an acute sense of smell, non-retractile claws, and a barking, howling, or whining voice.</p>
-        <table border="1">
-            <tr>
-                <th>Known allies: </th>
-                <th>Known enemies: </th>
-            </tr>
-            <tr>
-                <td><a href="bird.html">Birds</a></td>
-                <td><a href="cat.html">Cats</a></td>
-            </tr>
-        </table>
+        <div class="container">
+            <div class="row">
+                <div class="col"><strong>Known allies:</strong></div>
+                <div class="col"><strong>Known enemies:</strong></div>
+            </div>
+            <div class="row">
+                <div class="col"><a href="bird.html">Birds</a></div>
+                <div class="col"><a href="cat.html">Cats</a></div>
+            </div>
+        </div>
         <p class="go-back"><a href="index.html">Go back!</a></p>
     </body>
 </html>
