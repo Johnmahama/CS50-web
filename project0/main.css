@@ -31,7 +31,7 @@ html {
     text-decoration: underline;
   }
   
-  #protip {
+  .protip {
     font-size: 15px;
     font-family: monospace;
     color: dimgray;
