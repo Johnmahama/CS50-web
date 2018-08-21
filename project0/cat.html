@@ -5,10 +5,15 @@
         <title>Cat</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="main.css" />
+        <style>
+            .col-sm-6 {
+                border: 1px black solid;
+            }
+        </style>
     </head>
     <body>
         <div class="page-header">
-        <h1 class="title" style="width:80%;text-align:left;">Cat <small>(Felis silvestris catus)</small></h1>
+        <h1 class="title" style="width:100%;text-align:left;">Cat <small>(Felis silvestris catus)</small></h1>
         </div>
         <p>Most common cat names:</p>
         <ol class="list border">
@@ -18,6 +23,30 @@
             <li>Shadow</li>
             <li>Luna</li>
         </ol>
+        <h2>Number of cats per country (in 1000s)</h2>
+        <div class="container" style="border:1px black solid">
+            <div class="row">
+                <div class="col-sm-6">Germany</div>
+                <div class="col-sm-6">13,700</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">France</div>
+                <div class="col-sm-6">13,500</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">United Kingdom</div>
+                <div class="col-sm-6">7,900</div>   
+            </div>
+            <div class="row">
+                <div class="col-sm-6">Italy</div>
+                <div class="col-sm-6">7,480</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">Poland</div>
+                <div class="col-sm-6">6,100</div>
+            </div>
+        </div>
+        <br />
         <p class="go-back"><a href="index.html">Go back!</a></p>
     </body>
 </html>
