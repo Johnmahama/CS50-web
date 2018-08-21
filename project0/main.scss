@@ -1,3 +1,5 @@
+$basicfontsize: 15px;
+
 html {
     background-color: #f7f7f7;
     margin-left: 25px;
@@ -18,14 +20,14 @@ h1 {
 
 h2 {
     font-size: 25px;
+    
+    .species {
+    text-decoration: underline;
+    }
 }
 
 p {
-    font-size: 17px;
-}
-
-.species {
-    text-decoration: underline;
+    font-size: $basicfontsize;
 }
 
 #pets-title {
@@ -35,7 +37,7 @@ p {
 }
 
 #protip {
-    font-size: 15px;
+    font-size: $basicfontsize;
     font-family: monospace;
     color: dimgray;
     font-variant-caps: all-small-caps;
@@ -50,8 +52,9 @@ img:hover {
 }
 
 .go-back {
+    font-size: $basicfontsize;
+    
     font-family: monospace;
-    font-size: 17px;
     text-align: center;
     
     width: 150px;
@@ -59,4 +62,9 @@ img:hover {
     
     border: 5px black solid;
     background-color: white;
+}
+
+.title {
+    @extend .go-back;
+    font-size: 30px;
 }
