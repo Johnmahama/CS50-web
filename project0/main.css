@@ -1,0 +1,61 @@
+html {
+    background-color: #f7f7f7;
+    margin-left: 25px;
+  }
+  
+  h1, h2 {
+    color: rebeccapurple;
+    width: 20%;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    font-size: 50px;
+  }
+  
+  h2 {
+    font-size: 25px;
+  }
+  h2 .species {
+    text-decoration: underline;
+  }
+  
+  p {
+    font-size: 15px;
+  }
+  
+  #pets-title {
+    color: mediumvioletred;
+    font-style: italic;
+    text-decoration: underline;
+  }
+  
+  #protip {
+    font-size: 15px;
+    font-family: monospace;
+    color: dimgray;
+    font-variant-caps: all-small-caps;
+  }
+  
+  img {
+    width: 20%;
+  }
+  
+  img:hover {
+    width: 21%;
+  }
+  
+  .go-back, .title {
+    font-size: 15px;
+    font-family: monospace;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    border: 5px black solid;
+    background-color: white;
+  }
+  
+  .title {
+    font-size: 30px;
+  }
