@@ -5,5 +5,7 @@
 {% endblock %}
 
 {% block body %}
-<h1>Hello</h1>
+<h1>Welcome</h1>
+<p><a href="{{ url_for('login_form') }}">Login</a></p>
+<p><a href="{{ url_for('register_form') }}">Register</a></p>
 {% endblock %}
