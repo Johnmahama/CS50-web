@@ -9,8 +9,14 @@
 
 <body class="bg-light">
     <div class="container">
-        {% block body %}
-        {% endblock %}
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-4 ">
+                {% block body %}
+                {% endblock %}
+            </div>
+            <div class="col"></div>
+        </div>
     </div>
 </body>
 

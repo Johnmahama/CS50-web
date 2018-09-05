@@ -1,31 +1,27 @@
-{% extends "layout.html" %}
+{% extends "layout_center.html" %}
 
 {% block title %}
 Account register
 {% endblock %}
 
 {% block body %}
-<div class="row">
-    <div class="col"></div>
-    <div class="col-4 ">
-        <h1>Register</h1>
 
-        <form class="border border-primary rounded" style="padding:20px" method="post" action="{{ url_for('register') }}">
-            <div class="form-group">
-                <label>Username</label>
-                <input type="text" class="form-control" placeholder="Enter username" name="username">
-            </div>
-            <div class="form-group">
-                <label>Password</label>
-                <input type="password" class="form-control" placeholder="Enter password" name="password">
-            </div>
-            <div class="row">
-                <div class="col">
-                    <button type="submit" class="btn btn-primary">Register</button>
-                </div>
-            </div>
-        </form>
+<h1>Register</h1>
+
+<form class="border border-primary rounded" style="padding:20px" method="post" action="{{ url_for('register') }}">
+    <div class="form-group">
+        <label>Username</label>
+        <input type="text" class="form-control" placeholder="Enter username" name="username">
     </div>
-    <div class="col"></div>
-</div>
+    <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="form-control" placeholder="Enter password" name="password">
+    </div>
+    <div class="row">
+        <div class="col">
+            <button type="submit" class="btn btn-primary">Register</button>
+        </div>
+    </div>
+</form>
+
 {% endblock %}
