@@ -41,6 +41,12 @@ def registered():
     if db.execute("SELECT * FROM users WHERE username = :user", {"user": username}).rowcount > 0:
         return render_template("error.html", message="User already exists")
     
+    if username == "":
+        return render_template("error.html", message="No username given")
+    
+    if password == "":
+        return render_template("error.html", message="No password given")
+    
     db.execute("INSERT INTO users (username, password) VALUES (:username, :password)",
                 {"username": username, "password": password})
 
