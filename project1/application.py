@@ -26,15 +26,15 @@ def index():
     return render_template("index.html")
 
 @app.route("/login_form")
-def login():
+def login_form():
     return render_template("login_form.html")
 
 @app.route("/register_form")
-def register():
+def register_form():
     return render_template("register_form.html")
 
 @app.route("/register", methods=["POST"])
-def registered():
+def register():
     username = request.form.get("username")
     password = request.form.get("password")
 
