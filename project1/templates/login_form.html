@@ -6,14 +6,14 @@ User login
 
 {% block body %}
 <h1>Book worm</h1>
-<form class="border border-primary rounded" style="padding:20px" method="post">
+<form class="border border-primary rounded" style="padding:20px" method="post" action="{{ url_for('login') }}">
     <div class="form-group">
         <label>Username</label>
-        <input type="text" class="form-control" placeholder="Enter username">
+        <input type="text" class="form-control" placeholder="Enter username" name="username">
     </div>
     <div class="form-group">
         <label>Password</label>
-        <input type="password" class="form-control" placeholder="Enter password">
+        <input type="password" class="form-control" placeholder="Enter password" name="password">
     </div>
     <div class="row">
         <div class="col">

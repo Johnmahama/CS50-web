@@ -29,6 +29,27 @@ def index():
 def login_form():
     return render_template("login_form.html")
 
+@app.route("/login", methods=["POST"])
+def login():
+    username = request.form.get("username")
+    password = request.form.get("password")
+
+    # Get username and password from database
+    dbcredentials = db.execute("SELECT * FROM users WHERE username = :username", {"username": username}).fetchone()
+    dbusername = dbcredentials[0]
+    dbpassword = dbcredentials[1]
+
+    if username == "" or password == "":
+        return render_template("error.html", message="Username or password empty")
+
+    if db.execute("SELECT username FROM users WHERE username = :username", {"username": username}).rowcount == 0:
+        return render_template("error.html", message="User doesn't exist")
+
+    if dbpassword == password:
+        return render_template("login.html")
+    else:
+        return render_template("error.html", message="Wrong password")
+
 @app.route("/register_form")
 def register_form():
     return render_template("register_form.html")
@@ -38,7 +59,8 @@ def register():
     username = request.form.get("username")
     password = request.form.get("password")
 
-    if db.execute("SELECT * FROM users WHERE username = :user", {"user": username}).rowcount > 0:
+    # :user, {"user": username}
+    if db.execute("SELECT * FROM users WHERE username = :username", {"username": username}).rowcount > 0:
         return render_template("error.html", message="User already exists")
     
     if username == "":
@@ -57,3 +79,8 @@ def register():
 def users():
     users = db.execute("SELECT * FROM users").fetchall()
     return render_template("users.html", users=users)
+
+@app.route("/front")
+def front():
+    user = request.form.get("username")
+    return render_template("front.html", user=user)
