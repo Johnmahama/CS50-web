@@ -1,4 +1,4 @@
 export FLASK_APP=application.py
 export FLASK_DEBUG=1 
 export DATABASE_URL=postgres://vglzxxfevwuuyl:f5601bc131e3960a751e9c0cb0943be37234c071ed1e23ac1ab2b14ec33c2f07@ec2-54-217-245-9.eu-west-1.compute.amazonaws.com:5432/db9c4lfjg8kroi
-flask run
+python3 -m flask run
