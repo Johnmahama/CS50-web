@@ -63,11 +63,11 @@ def register():
 
     # :user, {"user": username}
     if db.execute("SELECT * FROM users WHERE username = :username", {"username": username}).rowcount > 0:
-        return render_template("error.html", message="User already exists")
+        return render_template("error.html", message="Username already exists")
     
+    # Checks if field is empty
     if username == "":
         return render_template("error.html", message="No username given")
-    
     if password == "":
         return render_template("error.html", message="No password given")
     
